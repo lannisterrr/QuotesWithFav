@@ -74,13 +74,6 @@ function tweetQuote(){
     window.open(twitterUrl, '_blank');
 }
 
-function whatsapp(){
-  const quote = quoteText.innerText;
-  const author = authorText.innerText;
-  const whatsappUrl = `whatsapp://send?text=${quote} - ${author}`;
-  window.open(whatsappUrl, '_blank');
- 
-}
 
 function addfav(){
     const key = quoteText.innerText;
@@ -109,6 +102,6 @@ newQuoteBtn.addEventListener('click',getQuote);
 twitterBtn.addEventListener('click',tweetQuote);
 favBtn.addEventListener('click',addfav);
 
-whatsappBtn.addEventListener('click', whatsapp);
+
 // on load
 getQuote();
